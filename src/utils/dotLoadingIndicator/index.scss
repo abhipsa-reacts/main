@@ -1,0 +1,39 @@
+@import '../../_variables.scss';
+
+.dot-loader-container {
+    margin: 5rem 0;
+    .dot-loader {
+        width: max-content;
+        height: 2rem;
+        margin: auto;
+        display: flex;
+        .dot {
+            width: 1rem;
+            height: 1rem;
+            background: $gray-tab-background;
+            border-radius: 50%;
+            margin: 0 0.25rem;
+            animation: jump 1s linear infinite;
+            &#second-dot {
+            animation-delay: 0.2s;
+            background: darken($gray-tab-background, 20%);
+            }
+            &#third-dot {
+                animation-delay: 0.4s;
+                background: darken($gray-tab-background, 40%);
+            }
+          }
+    }
+}
+
+@keyframes jump {
+  0% {
+    margin-top: 0;
+  }
+  30% {
+    margin-top: -2rem;
+  }
+  60% {
+    margin-top: 0;
+  }
+}

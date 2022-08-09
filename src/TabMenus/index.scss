@@ -1,0 +1,23 @@
+@import '../_variables.scss';
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: $gray-menu-background;
+    height: 5rem;
+    border-bottom: 1px solid $gray;
+    button {
+        width: 165px;
+        height: 40px;
+        background: $gray-tab-background 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border: 0;
+        margin: 0 2px;
+        cursor: pointer;
+        &.active {
+            background-color: $active-button;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@import '../_variables.scss';
+
+.tiles-container {
+    margin: 6.5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 125px;
+    align-items: stretch;
+    .tile {
+        width: 16%;
+        background-color: $light-blue;
+        font: 12px 'Open Sans';
+        &.tile-user {
+            width: 12%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                margin: 0.5rem 0;
+                letter-spacing: 0px;
+                color: $font-color;
+                font: 10px 'Arial';
+            }
+        }
+        &.tile-content {
+            width: 20%;
+            padding: 0.75rem;
+            text-align: left;
+            p {
+                margin: 0;
+                color: $font-color;
+                line-height: 1.75;
+                .icon-content {
+                    height: 14px;
+                    width: 12px;
+                    color: $blue-icon;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+        &.tile-activity {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: $white;
+            .tile-activity-top {
+                background-color: $light-blue;
+                height: 20%;
+            }
+            .tile-activity-bottom {
+                background-color: $white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+                height: 80%;
+                .sub-tile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 33%;
+                    background-color: $light-blue;
+                    h1 {
+                        margin: 0;
+                        text-align: center;
+                        font: 50px 'Open Sans';
+                        letter-spacing: 0px;
+                        color: #333333;
+                        opacity: 1;
+                    }
+                    p {
+                        padding: 5px 0;
+                        margin: 0;
+                        text-align: center;
+                        letter-spacing: 0px;
+                        color: #333333;
+                        opacity: 1;
+                    }
+                    :last-child {
+                        backdrop-filter: contrast(0.8);
+                        font: 10px 'Open Sans';
+                    }
+                }
+            }
+        }
+        &.tile-status {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $light-green;
+            width: 20%;
+            h1 {
+                margin: 0;
+                text-align: center;
+                letter-spacing: 0px;
+                font: 50px 'Open Sans';
+                color: #333333;
+                opacity: 1;
+            }
+            p {
+                padding: 5px 0;
+                margin: 0;
+                text-align: center;
+                letter-spacing: 0px;
+                color: #333333;
+                opacity: 1;
+            }
+            :last-child {
+                backdrop-filter: contrast(0.8);
+            }
+        }
+    }
+    .user-icon {
+        width: 63px;
+        height: 72px;
+        color: $white;
+        padding: 1rem 1rem 0 1rem;
+    }
+}

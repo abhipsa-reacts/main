@@ -1,0 +1,38 @@
+@import '../_variables.scss';
+
+.page-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid $gray;
+    .header-left {
+        display: flex;
+        align-items: center;
+        .star-icon {
+            color: $light-gray;
+            width: 28px;
+            height: 25px;
+            margin-right: 1rem;
+        }
+        h2 {
+            text-align: left;
+            font: normal 600 25px/34px 'Open Sans';
+            letter-spacing: 0px;
+            color: $black;
+            opacity: 1;
+        }
+    }
+    .header-right {
+        button {
+            width: 200px;
+            height: 40px;
+            background: $gray 0% 0% no-repeat padding-box;
+            border: 0;
+            color: $white;
+            border-radius: 4px;
+            opacity: 1;
+        }
+    }
+}
